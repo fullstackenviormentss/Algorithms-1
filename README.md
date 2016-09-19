@@ -25,6 +25,7 @@ It isn’t that I am totally unfamiliar with all of it. I kind of know and remem
 * Permutations and Combinations
 * Probability Distribution / Probability Theory
 * Sequences and Series (AP, GP, HP, etc.)
+* Trigonometry
 
 # Data Structures
 
