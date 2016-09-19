@@ -41,9 +41,20 @@ It isn’t that I am totally unfamiliar with all of it. I kind of know and remem
 * Binary Search Trees
 * Hash Tables
 * Heaps
+* Union Find
 
 # Classes of Algorithms
 * Sorting Algorithms
+  * Simple sort
+     * Insertion sort
+     * Selection sort
+  * Efficient sorts
+     * Merge sort
+     * Heapsort
+     * Quicksort
+3.3 Bubble sort and variants
+     * Bubble sort
+     * Shell sort
 * Searching Algorithms
 * Graph Theory
 * Hashing
