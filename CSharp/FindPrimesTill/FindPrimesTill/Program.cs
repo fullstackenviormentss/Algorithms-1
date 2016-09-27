@@ -7,6 +7,9 @@ namespace FindPrimesTill
 {
     class Program
     {
+        // See http://stackoverflow.com/a/39717316/303685 for why the stopwatch wasn't
+        // displaying the correct amount of time taken for each  operation
+        // Friendly URL: http://stackoverflow.com/questions/39716034/system-diagostics-stopwatch-appears-not-to-display-the-correct-amount-of-time-el/39717316#39717316
         static void Main(string[] args)
         {
             int n = 0;
@@ -19,10 +22,10 @@ namespace FindPrimesTill
 
             var stopwatch = new Stopwatch();
             stopwatch.Start();
-            var primesTillN = FindPrimesTill(n);
+            var primesTillN = FindPrimesTill(n).ToList();
             stopwatch.Stop();
             var millisecondsToFind = stopwatch.ElapsedMilliseconds;
-            var numFound = primesTillN.Count();
+            var numFound = primesTillN.Count;
 
             Console.WriteLine($"\n{numFound} primes between 1 and {n}. Time taken to find primes: {millisecondsToFind} milliseconds");
             Console.WriteLine("Printing...\n");
@@ -34,7 +37,7 @@ namespace FindPrimesTill
             var millisecondsToPrint = stopwatch.ElapsedMilliseconds;
 
             Console.WriteLine($"\n\nSTATS:\nTime to find {numFound} primes between 1 to {n}: {millisecondsToFind} milliseconds.");
-            Console.WriteLine($"Time taken to print: {millisecondsToFind} milliseconds.\n");
+            Console.WriteLine($"Time taken to print: {millisecondsToPrint} milliseconds.\n");
             
             Console.ReadKey();
         }
