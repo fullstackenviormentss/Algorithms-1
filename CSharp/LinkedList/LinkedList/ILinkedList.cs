@@ -1,20 +1,27 @@
-﻿namespace LinkedList
+﻿using System.IO;
+
+namespace LinkedList
 {
     public interface ILinkedList<T>
     {
-        Node<T> Append(Node<T> node);
-        Node<T> Append(T data);
+        INode<T> Append(T data);
+        INode<T> Append(INode<T> node);
 
-        Node<T> InsertAt(Node<T> node, int position);
-        Node<T> InsertAt(T data, int position);
+        INode<T> InsertAt(T data, int index);
+        INode<T> InsertAt(INode<T> node, int index);
 
-        Node<T> Remove(Node<T> node);
-        Node<T> Remove(T data);
-        Node<T> RemoveAll(T data);
-        Node<T> RemoveFirst(T data);
-        Node<T> RemoveLast(T data);
+        INode<T> RemoveFirst();
+        INode<T> RemoveFirst(T data);
+
+        INode<T> RemoveLast();
+        INode<T> RemoveLast(T data);
+
+        INode<T> RemoveAll(T data);
         
-        Node<T> RemoveAt(int position);
+        INode<T> RemoveAt(int index);
+
+        void Clear();
+        void Print(TextWriter w = null);
 
         int Count { get; }
     }
