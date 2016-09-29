@@ -86,11 +86,22 @@ namespace LinkedList
 
         public INode<T> RemoveAt(int index)
         {
+            // if index is negative or greater than count
+            // throw out of range
+
+            // if the list is empty, return null;
+
+            // Traverse to (index - 1) and (index + 1)
+            // set Next of (index - 1) to (index + 1)
+            // return index node
             throw new NotImplementedException();
         }
 
         public INode<T> RemoveFirst()
         {
+            // if the list is empty return null;
+
+            // 
             throw new NotImplementedException();
         }
 

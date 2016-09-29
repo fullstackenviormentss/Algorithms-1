@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D6C1D6E7-707B-41BF-ABF5-5BB2596F9B8E}</ProjectGuid>
+    <ProjectGuid>{BBA24F55-0941-405C-AF81-013EDFEF5F91}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LinkedList</RootNamespace>
-    <AssemblyName>LinkedList</AssemblyName>
+    <RootNamespace>Fibonacci</RootNamespace>
+    <AssemblyName>Fibonacci</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,15 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EnumerableExtensions.cs" />
-    <Compile Include="IDataEnumerableLinkedList.cs" />
-    <Compile Include="ILinkedList.cs" />
-    <Compile Include="INode.cs" />
-    <Compile Include="INodeEnumerableLinkedList.cs" />
-    <Compile Include="LinkedList.cs" />
-    <Compile Include="Node.cs" />
-    <Compile Include="NodeDataEqualityComparer.cs" />
+    <Compile Include="Find.cs" />
+    <Compile Include="LINQ.cs" />
+    <Compile Include="Loop.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recurse.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

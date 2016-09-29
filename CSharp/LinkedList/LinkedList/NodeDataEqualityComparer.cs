@@ -2,15 +2,17 @@
 
 namespace LinkedList
 {
-    internal class NodeEqualityComparer<T> : IEqualityComparer<Node<T>>
+    internal class NodeDataEqualityComparer<T> : IEqualityComparer<Node<T>>
     {
         public bool Equals(Node<T> x, Node<T> y)
         {
-            return object.Equals(x, y) && x.Data.Equals(y.Data);
+            // TO DO:
+            return x.Data.Equals(y.Data);
         }
 
         public int GetHashCode(Node<T> obj)
         {
+            // TO DO:
             return obj.GetHashCode();
         }
     }
