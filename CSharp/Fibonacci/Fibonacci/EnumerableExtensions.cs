@@ -60,7 +60,7 @@ namespace Extensions
             s.Print(w, false);
             return;
         }
-
+        
         public static void Print(this string s, TextWriter writer, bool newLine = true)
         {
             if (s == null) throw new ArgumentNullException("s");
